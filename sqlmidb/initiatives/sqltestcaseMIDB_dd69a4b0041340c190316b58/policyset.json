@@ -1,0 +1,44 @@
+{
+ "properties": {
+  "displayName": "sqltestcaseMIDB",
+  "policyType": "Custom",
+  "metadata": {
+   "parameterScopes": {
+    "storageAccountsResourceGroup": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074"
+   },
+   "createdBy": "6605a810-6bcf-410f-b5f9-49f217260228",
+   "createdOn": "2021-08-25T21:03:25.7182226Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Configure SQL servers to have auditing enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f4c68484-132f-41f9-9b6d-3e4b1cb55036",
+    "parameters": {
+     "storageAccountsResourceGroup": {
+      "value": "mazi"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Azure SQL Managed Instance should have Azure Active Directory Only Authentication enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/78215662-041e-49ed-a9dd-5385911b3a1f",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Azure SQL Database should have Azure Active Directory Only Authentication enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/abda6d70-9778-44e7-84a8-06713e6db027",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074/providers/Microsoft.Authorization/policySetDefinitions/dd69a4b0041340c190316b58",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "dd69a4b0041340c190316b58"
+}
