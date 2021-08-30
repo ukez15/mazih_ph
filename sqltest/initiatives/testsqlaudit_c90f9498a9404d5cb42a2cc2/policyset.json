@@ -1,0 +1,32 @@
+{
+ "properties": {
+  "displayName": "testsqlaudit",
+  "policyType": "Custom",
+  "metadata": {
+   "parameterScopes": {
+    "logAnalyticsWorkspaceId": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074"
+   },
+   "createdBy": "6605a810-6bcf-410f-b5f9-49f217260228",
+   "createdOn": "2021-08-30T18:18:04.0197198Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Configure Azure SQL database servers diagnostic settings to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/7ea8a143-05e3-4553-abfe-f56bef8b0b70",
+    "parameters": {
+     "logAnalyticsWorkspaceId": {
+      "value": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074/resourcegroups/defaultresourcegroup-weu/providers/microsoft.operationalinsights/workspaces/defaultworkspace-0fdb51da-618c-4b1f-82e2-6e7071d2d074-weu"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074/providers/Microsoft.Authorization/policySetDefinitions/c90f9498a9404d5cb42a2cc2",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "c90f9498a9404d5cb42a2cc2"
+}
