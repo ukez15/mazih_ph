@@ -1,0 +1,48 @@
+{
+ "properties": {
+  "displayName": "sqldiagnosticset",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "parameterScopes": {
+    "logAnalyticsWorkspaceId": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074"
+   },
+   "createdBy": "6605a810-6bcf-410f-b5f9-49f217260228",
+   "createdOn": "2021-08-30T18:57:02.4412691Z",
+   "updatedBy": "6605a810-6bcf-410f-b5f9-49f217260228",
+   "updatedOn": "2021-08-31T07:59:30.3308376Z"
+  },
+  "parameters": {
+   "testsqlaudit": {
+    "type": "string",
+    "metadata": {
+     "displayName": "omsworkspace",
+     "description": "select log analytics workspace"
+    },
+    "defaultValue": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Azure SQL Database should have Azure Active Directory Only Authentication enabled_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/abda6d70-9778-44e7-84a8-06713e6db027",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Configure Azure SQL database servers diagnostic settings to Log Analytics workspace custom_1",
+    "policyDefinitionId": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074/providers/Microsoft.Authorization/policyDefinitions/b0da98da-37a3-49bd-b2fa-80f430d1aac1",
+    "parameters": {
+     "logAnalyticsWorkspaceId": {
+      "value": "[parameters('testsqlaudit')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/0fdb51da-618c-4b1f-82e2-6e7071d2d074/providers/Microsoft.Authorization/policySetDefinitions/111b87f37f9b45d1a716a6dc",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "111b87f37f9b45d1a716a6dc"
+}
